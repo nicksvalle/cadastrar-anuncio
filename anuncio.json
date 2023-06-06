@@ -1,0 +1,13 @@
+{
+  "anuncio": [
+    {
+      "id": 1,
+      "titulo": "Fusca",
+      "descricao": "Carro ads",
+      "preco": 9000,
+      "date": "10/10/2010",
+      "img": "https://revistacarro.com.br/wp-content/uploads/2020/01/VW-Fusca.jpg",
+      "status": "ativo"
+    }
+  ]
+}

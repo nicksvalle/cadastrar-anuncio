@@ -1,0 +1,102 @@
+<div class="row">
+    <div class="col-8 m-auto">
+  
+      <form [formGroup]="formGroupClient">
+  
+        <div class="mb-3">
+  
+          <div class="display-6 text-center">
+            Cadastro de Anuncio
+          </div>
+  
+          <label for="titulo" class="form-label">Título</label>
+          <input type="text" formControlName="titulo" class="form-control" id="titulo" placeholder="Título">
+  
+        </div>
+  
+        <div class="mb-3">
+          <label for="descricao" class="form-label">Descrição</label>
+          <input type="text" formControlName="descricao" class="form-control" id="descricao" placeholder="Descrição">
+        </div>
+  
+        <div class="mb-3">
+          <label for="preco" class="form-label">Preço</label>
+          <input type="number" formControlName="preco" class="form-control" id="preco" placeholder="Preço">
+        </div>
+  
+        <div class="mb-3">
+          <label for="date" class="form-label">Data de fabricação</label>
+          <input type="date" formControlName="date" class="form-control" id="date" placeholder="Data de fabricação">
+        </div>
+  
+        <div class="mb-3">
+          <label for="img" class="form-label">Imagem do carro</label>
+          <input type="text" formControlName="img" class="form-control" id="img" placeholder="Imagem (URL)">
+        </div>
+  
+        <div class="mb-3">
+          <label class="form-label">Status</label>
+        
+          <div class="form-check">
+            <input type="radio" formControlName="status" class="form-check-input" id="Ativo" value="Ativo">
+            <label for="ativo" class="form-check-label">Ativo</label>
+          </div>
+        
+          <div class="form-check">
+            <input type="radio" formControlName="status" class="form-check-input" id="Desativo" value="Desativo">
+            <label for="desativo" class="form-check-label">Desativo</label>
+          </div>
+        </div>
+  
+        <div class="mb-3 d-flex justify-content-end">
+  
+          <button type="button" class="btn btn-dark me-1" (click)="save()">Salvar</button>
+          <button type="button" class="btn btn-dark" (click)="clean()">Limpar</button>
+  
+        </div>
+  
+      </form>
+  
+    </div>
+  
+  </div>
+  
+  <table class="table table-striped">
+  
+    <thead>
+  
+      <tr>
+  
+        <th scope="col">ID</th>
+        <th scope="col">Titulo</th>
+        <th scope="col">Descrição</th>
+        <th scope="col">Preço</th>
+        <th scope="col">Data de fabricação</th>
+        <th scope="col">Imagem</th>
+        <th scope="col">Status</th>
+  
+      </tr>
+  
+    </thead>
+  
+    <tbody>
+  
+      <tr *ngFor="let anuncio of cadastrar">
+  
+        <th scope="row">{{anuncio.id}}</th>
+  
+        <td>{{anuncio.titulo}}</td>
+        <td>{{anuncio.descricao}}</td>
+        <td>{{anuncio.preco}}</td>
+        <td>{{anuncio.date}}</td>
+        <td>{{anuncio.img}}</td>
+        <td>{{anuncio.status}}</td>
+        <td>
+  
+          <button type="button" class="btn btn-dark me-1" (click)="edit(anuncio)" >Editar</button>
+          <button type="button" class="btn btn-dark" (click)="delete(anuncio)">Excluir</button>
+  
+        </td>
+      </tr>
+    </tbody>
+  </table>
