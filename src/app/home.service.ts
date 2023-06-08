@@ -8,7 +8,7 @@ import { Cadastrar } from './anuncio';
 })
 export class HomeService {
 
-  private anuncioUrl = 'anuncio.json';
+  private anuncioUrl = 'http://localhost:3000/anuncio';
 
   constructor(private http : HttpClient) { }
 

@@ -3,11 +3,20 @@
     {
       "id": 1,
       "titulo": "Fusca",
-      "descricao": "Carro ads",
+      "descricao": "Veículo de linhas arredondadas, herança do seu antecessor, o New Beetle está disponível com uma única opção de motor: 2.0 de 116 cv de potência a 5.200 rpm e torque de 17,3 kgfm a 2.400 rpm.",
       "preco": 9000,
       "date": "10/10/2010",
       "img": "https://revistacarro.com.br/wp-content/uploads/2020/01/VW-Fusca.jpg",
-      "status": "ativo"
+      "status": "Desativo"
+    },
+    {
+      "id": 2,
+      "titulo": "Porsche",
+      "descricao": "A silhueta do 911 Carrera é inconfundível, graças ao icônico Flyline com sua linha de teto levemente inclinada, que molda o DNA da marca Porsche desde 1963 ",
+      "preco": 1000000,
+      "date": "2019-05-10",
+      "img": "https://www.webmotors.com.br/wp-content/uploads/2021/06/23174716/2022-porsche-911-carrera-gts-front-3-4.jpg",
+      "status": "Ativo"
     }
   ]
 }
